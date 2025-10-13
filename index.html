@@ -1,48 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <div class="container">
+    <header class="navigation">
+        <!-- <div>
+            <div></div>
+            <div></div>
+        </div> -->
+        <div class="nav">
+            <img class="nav__logo" src="./assets/icons/logo.svg" alt="Robin.W" />
+            <nav class="nav__menu">
+                <ul class="menu__list">
+                    <li class="menu-list__item">
+                        <a class="list-item__ref" href="#">Experience</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="list-item__ref" href="#">Work</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="list-item__ref" href="#">Photography</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="list-item__ref" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="about">
+            <img class="about__photo" src="./assets/images/Rectangle 37.png" alt="photo">
+            <div class="about__description">
+                <h1>I’m Robin Williams. <br>A Product Designer <br><span class="grey_paragraph">based in Italy.</span>
+                </h1>
+                <p class="description__text">I’m probably the most passionate designer you will ever get to work with.
+                    If you have <br>a great project that needs some amazing skills, I’m your guy.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="experience">
+            <div class="experience__companies">
+                <span class="companies__description">WORK EXPERIENCE</span>
+                <h2 class="companies_maintitle">Companies I have worked <br> for in the past</h2>
+                <div class="companies_workfor">
+                    <div>
+                        <span class="workfor__item">01</span>
+                        <p class="workfor__title"><span class="company1_title">Google</span>, Interaction Designer</p>
+                        <p class="workfor__position">I currently am the lead designer on the <br>interaction design team
+                            for Google Play.</p>
+                    </div>
+                    <div>
+                        <span class="workfor__item">02</span>
+                        <p class="workfor__title"><span class="company2_title">Facebook</span>, Product Designer</p>
+                        <p class="workfor__position">I’ve worked on a wide variety of internal tools <br> for facebook
+                            over the past 6 years.</p>
+                    </div>
+                    <div>
+                        <span class="workfor__item">03</span>
+                        <p class="workfor__title"><span class="company3_title">Dribbble</span>, Graphic Designer</p>
+                        <p class="workfor__position">I started my design career with Dribbble. I was <br> incharge of
+                            creating illustrations for the platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="philosophy">
+            <div class="phylosophy__values">
+                <h2 class="values__maintitle">Philosophy & values</h2>
+                <p class="values__description">I think everyone wants the same thing - relationship with humanity, peace
+                    with the metaphysical, and experience with the universe. I try to grasp these things with my values:
+                    authenticity, creativity, & hospitality.</p>
+                <a class="values__link">More about me</a>
+            </div>
+            <div>
+                <img class="values__photo" src="./assets/images/Rectangle 39.jpg" alt="Philosophy & values">
+            </div>
+        </div>
 
         <div class="skillset">
-            <h1>Skillset</h1>
-            <p>With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
-        </div>
+            <div class="skillset__skills">
+                <h2 class="skills__maintitle">Skillset</h2>
+                <p class="skills__description">With skills in over 4 different fields of design, I am the perfect person
+                    to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on
+                    any challenge.</p>
+            </div>
+            <div class="myskills">
+                <div class="skill">
+                    <img class="skill__icon" src="./assets/icons/Vector.svg" alt="Product Design">
+                    <h2 class="skill__title">Product Design</h2>
+                    <p class="skill__description">Working at Facebook has taught me a lot about how to understand users,
+                        solve problems and build great products.</p>
+                </div>
+                <div class="skill">
+                    <img class="skill__icon" src="./assets/icons/Group 62.svg" alt="Motion Design">
+                    <h2 class="skill__title">Motion Design</h2>
+                    <p class="skill__description">I started my design journey with motion design in my college days.
+                        Motion is something that really fascinates me because of the flexibility of story telling. </p>
+                </div>
+            </div>
 
-        <div class="skill">
-            <img src="./icons/Vector.svg" alt="Product Design">
-            <h2>Product Design</h2>
-            <p>Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-        </div>
-
-        <div class="skill">
-            <img src="./icons/Group 62.svg" alt="Motion Design">
-            <h2>Motion Design</h2>
-            <p>I started my design journey with motion design in my college days. Motion is something that really fascinates me because of the flexibility of story telling. </p>
-        </div>
-
-        <div class="skill">
-            <img src="./icons/Group 20.svg" alt="Visual Design">
-            <h2>Visual Design</h2>
-            <p>My experience at dribbble has helped me learn to develop the eye for design. Colors, typography, layout and the whole package.</p>
-        </div>
-
-        <div class="skill">
-            <img src="./icons/Group 63.svg" alt="Photography">
-            <h2>Photography</h2>
-            <p>Clicking pictures really brings out the creative in me. Phtography really makes you look and percieve things in a different way.</p>
+            <div class="myskills">
+                <div class="skill">
+                    <img class="skill__icon" src="./assets/icons/Group 20.svg" alt="Visual Design">
+                    <h2 class="skill__title">Visual Design</h2>
+                    <p class="skill__description">My experience at dribbble has helped me learn to develop the eye for
+                        design. Colors, typography, layout and the whole package.</p>
+                </div>
+                <div class="skill">
+                    <img class="skill__icon" src="./assets/icons/Group 63.svg" alt="Photography">
+                    <h2 class="skill__title">Photography</h2>
+                    <p class="skill__description">Clicking pictures really brings out the creative in me. Phtography
+                        really makes you look and percieve things in a different way.</p>
+                </div>
+            </div>
         </div>
 
         <div class="logos">
-            <img src="./icons/Group 107.svg" alt="">
-            <img src="./icons/Group 108.svg" alt="">
-            <img src="./icons/Group 109.svg" alt="">
-            <img src="./icons/Group 110.svg" alt="">
+            <div>
+                <img src="./assets/icons/Group 107.svg" alt="">
+            </div>
+            <div>
+                <img src="./assets/icons/Group 108.svg" alt="">
+            </div>
+            <div>
+                <img src="./assets/icons/Group 109.svg" alt="">
+            </div>
+            <div>
+                <img src="./assets/icons/Group 110.svg" alt="">
+            </div>
         </div>
-    </div>
+
+    </main>
+    <footer></footer>
 </body>
+
 </html>
