@@ -34,8 +34,20 @@
 
 /* Подключение локальных шрифтов */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navigation {
     background-color: #181823;
+
+}
+
+.navigation__background--dark {
+    background-color: #000000;
+    width: 30%;
+    height: 1050px;
+    position: absolute;
 }
 
 .nav {
@@ -43,6 +55,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+}
+
+.nav__logo {
+    position: relative;
 }
 
 .nav__menu {
@@ -83,11 +99,13 @@ ul {
     display: flex;
     align-items: center;
     padding-bottom: 84px;
+    position: relative;
+
 }
 
-
 .about__photo {
-    float: left;
+    width: 50%;
+    height: auto;
 }
 
 h1 {
@@ -96,6 +114,11 @@ h1 {
     font-weight: bold;
     margin-bottom: 32px;
     color: #ffffff;
+}
+
+.about__description {
+    position: relative;
+    right: 88px;
 }
 
 .description__text {
@@ -114,14 +137,13 @@ h1 {
 .experience {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 144px;
     background-color: #000000;
     color: #fff;
-    min-height: 715px;
 }
 
 .experience__companies {
     padding: 120px 72px;
+    width: 100%;
 }
 
 .companies__description {
@@ -141,9 +163,8 @@ h1 {
 
 .companies_workfor {
     display: flex;
-    justify-content: space-around;
-    gap: 24px;
-
+    justify-content: space-between;
+    margin-bottom: 120x;
 }
 
 .workfor__item {
@@ -186,7 +207,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     background-color: #FFF3E4;
-    padding: 120px 72px;
+}
+
+.phylosophy__values {
+    padding: 60px;
+    /* width: 50%; */
 }
 
 .values__maintitle {
@@ -212,9 +237,12 @@ h1 {
     font-weight:normal;
 }
 
-.values__photo {
-    width: 720px;
-    height: 600px;
+.phylosophy__picture {
+    width: 50%;
+    height: auto;
+}
+.picture__values {
+    display: block;
 }
 
 /* Стили для phylosophy and values */
@@ -243,6 +271,10 @@ h1 {
     margin-bottom: 48px;
 } 
 
+.skill {
+    height: 50%;
+}
+
 .skill__icon {
     margin-bottom: 24px;
 }
@@ -263,14 +295,150 @@ h1 {
 }
 
 .logos {
-    background-color: #000000;
+    background-color: #8491A0;
     display: flex;
     justify-content: space-around;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border: 1px solid grey;
-    
+    gap: 2px;
+}
+
+.logos__icon {
+    background-color: black;
+    flex: 1; 
+    border-top: 1px solid #8491A0;
+    border-bottom: 1px solid #8491A0;
+    padding: 55px 135px; 
+    text-align: center;
 }
 
 /* Стили для skillset */
 
+.contacts {
+    background-color: black;
+    width: 100%;
+    padding: 120px 182px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    color: #FFFFFF;
+}
+
+.contacts__description--maintitle {
+    color: #fff;
+    font-family: Sen, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.contacts__description--text {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.contacts__menu {
+    width: 526px;
+}
+
+.menu__item {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Sen, sana-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.menu__message {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Sen, sana-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.menu__commentary {
+    margin-bottom: 40px;
+    height: 100px;
+    resize: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.menu__field {
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.menu__button {
+    background-color: #5221E6;
+    padding: 24px;
+    width: 100%;
+}
+
+.button {
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    background-color: #181823;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    background-color: #181823;
+    border-color: #181823;
+}
+
+/* Стили для contacts */
+
+footer {
+    background-color: #181823;
+    padding: 80px 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-bottom: 32px;
+}
+
+.footer__social {
+    margin-bottom: 144px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer__copyright {
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #8491A0;
+}
+
+.footer__menu {
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    margin-right: 182px;
+    gap: 200px;
+}
+
+.menu__links--ref {
+    margin-bottom: 48px;
+}
+
+/* Стили для footer */

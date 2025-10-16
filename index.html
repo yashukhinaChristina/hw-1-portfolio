@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <header class="navigation">
-        <!-- <div>
-            <div></div>
-            <div></div>
-        </div> -->
+    <header class="navigation" id="block1">
+        <div class="navigation__background">
+            <div class="navigation__background--dark"></div>
+            <div class="navigation__background--light"></div>
+        </div>
         <div class="nav">
-            <img class="nav__logo" src="./assets/icons/logo.svg" alt="Robin.W" />
+            <img class="nav__logo" src="./assets/icons/logo_small.svg" alt="Robin.W" />
             <nav class="nav__menu">
                 <ul class="menu__list">
                     <li class="menu-list__item">
@@ -34,20 +34,20 @@
             </nav>
         </div>
 
-        <div class="about">
-            <img class="about__photo" src="./assets/images/Rectangle 37.png" alt="photo">
+        <div class="about" id="block2">
+            <img class="about__photo" src="./assets/images/Rectangle 37.png" width="750" height="650" alt="photo">
             <div class="about__description">
                 <h1>I’m Robin Williams. <br>A Product Designer <br><span class="grey_paragraph">based in Italy.</span>
                 </h1>
                 <p class="description__text">I’m probably the most passionate designer you will ever get to work with.
-                    If you have <br>a great project that needs some amazing skills, I’m your guy.
+                    If you have a great project that needs some amazing skills, I’m your guy.
                 </p>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="experience">
+        <div class="experience" id="block3">
             <div class="experience__companies">
                 <span class="companies__description">WORK EXPERIENCE</span>
                 <h2 class="companies_maintitle">Companies I have worked <br> for in the past</h2>
@@ -82,8 +82,9 @@
                     authenticity, creativity, & hospitality.</p>
                 <a class="values__link">More about me</a>
             </div>
-            <div>
-                <img class="values__photo" src="./assets/images/Rectangle 39.jpg" alt="Philosophy & values">
+            <div class="phylosophy__picture">
+                <img class="picture__values" src="./assets/images/Rectangle 39.jpg" width="720" height="600"
+                    alt="Philosophy & values">
             </div>
         </div>
 
@@ -126,22 +127,84 @@
         </div>
 
         <div class="logos">
-            <div>
-                <img src="./assets/icons/Group 107.svg" alt="">
+            <div class="logos__icon">
+                <img src="./assets/icons/Group 107.svg" alt="логотип 1">
             </div>
-            <div>
-                <img src="./assets/icons/Group 108.svg" alt="">
+            <div class="logos__icon">
+                <img src="./assets/icons/Group 108.svg" alt="логотип 2">
             </div>
-            <div>
-                <img src="./assets/icons/Group 109.svg" alt="">
+            <div class="logos__icon">
+                <img src="./assets/icons/Group 109.svg" alt="логотип 3">
             </div>
-            <div>
-                <img src="./assets/icons/Group 110.svg" alt="">
+            <div class="logos__icon">
+                <img src="./assets/icons/Group 110.svg" alt="логотип 4">
+            </div>
+        </div>
+
+        <div class="contacts">
+            <div class="contacts__description">
+                <h2 class="contacts__description--maintitle">Let’s get started</h2>
+                <p class="contacts__description--text">Now that you know a lot about me, let me know if you are
+                    interested to work with me.</p>
+            </div>
+            <div class="contacts__menu">
+                <form action="">
+                    <p>
+                        <label class="menu__item">Name</label>
+                        <input class="menu__field" type="text" name="name">
+                    </p>
+                    <p>
+                        <label class="menu__item">Email</label>
+                        <input class="menu__field" type="text" name="email">
+                    </p>
+                    <p>
+                        <label class="menu__message">Message</label>
+                        <textarea class="menu__commentary"></textarea>
+                    </p>
+                    <button class="menu__button" type="submit"><span class="button">Let’s get started</span></button>
+                </form>
             </div>
         </div>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <img class="footer__logo" src="./assets/icons/logo_big.svg" alt="Robin.W" />
+            <div class="footer__social">
+                <img src="./assets/icons/twitter.svg" alt="twitter">
+                <img src="./assets/icons/global.svg" alt="global">
+                <img src="./assets/icons/linkedin.svg" alt="linkedin">
+            </div>
+            <p class="footer__copyright">Not Copyright 2020 • Robin Williams. Webflow cloneable</p>
+        </div>
+        <div class="footer__menu">
+            <ul class="menu__links">
+                <li class="menu__links--ref">
+                    <a href="#block1">Home</a>
+                </li>
+                <li class="menu__links--ref">
+                    <a href="#block2">About</a>
+                </li>
+                <li class="menu__links--ref">
+                    <a href="#block3">Work</a>
+                </li>
+                <li class="menu__links--ref">
+                    <a href="#">Process</a>
+                </li>
+            </ul>
+            <ul class="menu__links">
+                <li class="menu__links--ref">
+                    <a href="#">Store</a>
+                </li>
+                <li class="menu__links--ref">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="menu__links--ref">
+                    <a href="#">Reading List</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
