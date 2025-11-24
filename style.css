@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* Свойства для сброса начальных стилей элементов */
+
+@font-face {
+    font-family: Sen;
+    src: url(./assets/fonts/Sen-Bold.eot?) format("eot"),
+    url(./assets/fonts/Sen-Bold.woff2) format("woff2"),
+    url(./assets/fonts/Sen-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sen;
+    src: url(./assets/fonts/Sen-Regular.eot?) format("eot"),
+    url(./assets/fonts/Sen-Regular.woff2) format("woff2"),
+    url(./assets/fonts/Sen-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(./assets/fonts/Bahnschrift.eot?) format("eot"),
+    url(./assets/fonts/Bahnschrift.woff2) format("woff2"),
+    url(./assets/fonts/Bahnschrift-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Подключение локальных шрифтов */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navigation {
+    background-color: #181823;
+
+}
+
+.navigation__background--dark {
+    background-color: #000000;
+    width: 30%;
+    height: 1050px;
+    position: absolute;
+}
+
+.nav {
+    padding: 32px 72px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.nav__logo {
+    position: relative;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+
+.list-item__ref {
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 32px 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list-item__ref:hover {
+    background-color: #5221E6;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 84px;
+    position: relative;
+
+}
+
+.about__photo {
+    width: 50%;
+    height: auto;
+}
+
+h1 {
+    font-family: Sen, sans-serif;
+    font-size: 78px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.about__description {
+    position: relative;
+    right: 88px;
+}
+
+.description__text {
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.grey_paragraph {
+    color: grey;
+}
+
+/* Стили для header */
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+}
+
+.experience__companies {
+    padding: 120px 72px;
+    width: 100%;
+}
+
+.companies__description {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.companies_maintitle {
+    font-family: Sen, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.companies_workfor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120x;
+}
+
+.workfor__item {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 117px;
+    font-weight: normal;
+}
+
+.workfor__title {
+    color: #FFFFFF;
+    font-family: Sen, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.company1_title {
+    color: #3CC74E;
+}
+
+.company2_title {
+    color: #609BFF;
+}
+
+.company3_title {
+    color: #E95D90;
+}
+
+.workfor__position {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Стили для work experience */
+
+.philosophy {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF3E4;
+}
+
+.phylosophy__values {
+    padding: 60px;
+    /* width: 50%; */
+}
+
+.values__maintitle {
+    font-family: Sen, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.values__description {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 134px;
+}
+
+.values__link {
+    color: #181823;
+    text-decoration: underline;
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+}
+
+.phylosophy__picture {
+    width: 50%;
+    height: auto;
+}
+.picture__values {
+    display: block;
+}
+
+/* Стили для phylosophy and values */
+
+.skillset {
+    background-color: #000000;
+    color: #fff;
+    padding: 120px 72px;
+    display: flex;
+    justify-content: space-between;
+    gap: 72px;
+}
+
+.skills__maintitle {
+    font-family: Sen, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.skills__description {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 48px;
+} 
+
+.skill {
+    height: 50%;
+}
+
+.skill__icon {
+    margin-bottom: 24px;
+}
+
+.skill__title {
+    margin-bottom: 12px;
+    font-family: Sen, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.skill__description {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 48px;
+}
+
+.logos {
+    background-color: #8491A0;
+    display: flex;
+    justify-content: space-around;
+    gap: 2px;
+}
+
+.logos__icon {
+    background-color: black;
+    flex: 1; 
+    border-top: 1px solid #8491A0;
+    border-bottom: 1px solid #8491A0;
+    padding: 55px 135px; 
+    text-align: center;
+}
+
+/* Стили для skillset */
+
+.contacts {
+    background-color: black;
+    width: 100%;
+    padding: 120px 182px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    color: #FFFFFF;
+}
+
+.contacts__description--maintitle {
+    color: #fff;
+    font-family: Sen, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.contacts__description--text {
+    color: #8491A0;
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.contacts__menu {
+    width: 526px;
+}
+
+.menu__item {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Sen, sana-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.menu__message {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Sen, sana-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.menu__commentary {
+    margin-bottom: 40px;
+    height: 100px;
+    resize: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.menu__field {
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.menu__button {
+    background-color: #5221E6;
+    padding: 24px;
+    width: 100%;
+}
+
+.button {
+    font-family: Sen, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    background-color: #181823;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    background-color: #181823;
+    border-color: #181823;
+}
+
+/* Стили для contacts */
+
+footer {
+    background-color: #181823;
+    padding: 80px 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-bottom: 32px;
+}
+
+.footer__social {
+    margin-bottom: 144px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer__copyright {
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #8491A0;
+}
+
+.footer__menu {
+    font-family: Sen, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    margin-right: 182px;
+    gap: 200px;
+}
+
+.menu__links--ref {
+    margin-bottom: 48px;
+}
+
+/* Стили для footer */
